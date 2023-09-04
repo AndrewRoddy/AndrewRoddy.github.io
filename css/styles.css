@@ -1,0 +1,28 @@
+body {
+    background-color: powderblue;
+  }
+  h1 {
+    color: blue;
+  }
+  p {
+    color: red;
+  }
+  .download {
+    height: 200px;
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.42);
+    border-radius: 25px;
+    position: relative;
+    
+  }
+  
+  .download_img {
+    border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+  }
