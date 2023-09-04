@@ -1,54 +1,43 @@
 body {
     background-color: rgb(72, 31, 0);
-    font-family: Arial, Helvetica, sans-serif
-  }
-  h1 {
-    color: blue;
-  }
-  p {
-    color: red;
-  }
-  .download {
-    margin: 0;
-    height: 150px;
-    width: 150px;
-    background-color: rgba(255, 255, 255, 0.42);
-    border-radius: 15px;
-    position: relative;
-    
-  }
-
-  .download_img {
-    
-    border-radius: 10px;
-    top: 29%;
-    left: 50%;
-    position: absolute;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-
-  .download_text {
-    position: absolute;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    top: 60%;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
-    left: 50%;
+  }
+
+a {
+  text-decoration: none;
+}
+
+  .float-grid {
+    padding: 1px;
+  }
+
+  .float-container {
+    display:inline-block;
+    margin: 4px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.21);
+    border-radius: 12px;
+    height: 170px;
+    width: 140px;
+  }
+
+  .container_img {
+    border-radius: 10px;
+  }
+
+  .container_text {
+    color: white;
     font-size: 20px;
+    text-align: center;
   }
   
-  .download_version {
-    position: absolute;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-size: 10px;
-    top: 85%;
+  .container_version {
     color: white;
-    left: 50%;
+    font-size: 10px;
+    text-align: center;
   }
 
-  .download:hover {
+  .float-container:hover {
     filter: brightness(90%);
-
   }
