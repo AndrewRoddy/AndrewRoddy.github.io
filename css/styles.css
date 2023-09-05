@@ -1,43 +1,64 @@
+:root {
+  --background: rgb(250, 232, 204);
+  --button: rgb(255, 157, 58);
+}
+
+
+
 body {
-    background-color: rgb(72, 31, 0);
+    background-color: var(--background);
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: var(--button);
   }
+h1, h3 {
+  filter: drop-shadow(0.4vw 0.4vw 0.1vw #00000069);
+}
 
 a {
   text-decoration: none;
 }
 
   .float-grid {
-    padding: 1px;
+    padding: 0.15vw;
   }
 
   .float-container {
     display:inline-block;
-    margin: 4px;
-    padding: 5px;
-    background-color: rgba(255, 255, 255, 0.21);
-    border-radius: 12px;
-    height: 170px;
-    width: 140px;
+    margin: 0.6vw;
+    padding: 0.7vw;
+    background-color: var(--button);
+    border-radius: 2vw;
+    height: 21vw;
+    width: 21.8vw;
+    filter: drop-shadow(0.5vw 0.5vw 0.6vw #000000);
   }
 
   .container_img {
-    border-radius: 10px;
+    border-radius: 1.5vw;
+    border-color: var(--background);
+    border-style: solid;
+    border-width: 0.4vw;
+    width: 21.1vw;
+    height: 11.9vw;
+    
   }
 
   .container_text {
     color: white;
-    font-size: 20px;
+    font-size: 3vw;
     text-align: center;
+    position: relative;
+    top: -1.5vw;
   }
   
   .container_version {
     color: white;
-    font-size: 10px;
+    font-size: 1.5vw;
     text-align: center;
+    position: relative;
+    top: -3.65vw;
   }
 
   .float-container:hover {
-    filter: brightness(90%);
+    filter: opacity(90%) drop-shadow(0.5vw 0.5vw 0.6vw #000000b1);;
   }
