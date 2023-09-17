@@ -3,45 +3,38 @@
   --button: rgb(255, 157, 58);
 }
 
-
-
 body {
     background-color: var(--background);
     font-family: Arial;
     color: var(--button);
     font-weight:  bold;
   }
-
-h1 {
+  
+.topnav h1{
+  display: inline;
   filter: drop-shadow(0vw 0vw 0.5vw #000000);
   text-align: center;
   font-size: 5vw;
 }
 
-h3 {
+.topnav h3{
+  display: inline;
   filter: drop-shadow(0vw 0vw 0.5vw #000000);
   text-align: center;
   font-size: 3vw;
 }
 
-a {
-  text-decoration: none;
-}
-
-p {
-  color: var(--background)
-}
-
-.logo-image {
-  height: 10vw;
+.topnav img{
+  height: 4vw;
   width: auto;
   filter: drop-shadow(0vw 0vw 0.5vw #000000);
   text-align: center;
-  display: block;
+  display: inline;
   margin-left: auto;
   margin-right: auto;
-
 }
+
+
 
 
 .float-grid {
