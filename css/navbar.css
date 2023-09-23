@@ -1,0 +1,40 @@
+/* || Navigation Bar */
+.topnav {
+    overflow: hidden;
+    text-align: center;
+    font-size: 17px;
+    display: flex !important;
+    font-size: 4vw;
+  }
+  
+  /* || Boxes in the bar */
+  .topnav a {
+    border-radius: 1.5vw;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2vw 3vw;
+    text-decoration: none;
+    margin: auto;
+    background-color: var(--navbar_background);
+  }
+  
+  /* || Hover over a bar */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* || When clicking on box */
+  .topnav a.active {
+    background-color: var(--navbar_selected);
+    color: white;
+  }
+  
+  /* || DrewGo Logo */
+  .topnav img {
+    width: 8vw;
+    height: 8vw;
+  }
+  
+  
