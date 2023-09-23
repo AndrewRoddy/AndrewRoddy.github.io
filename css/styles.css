@@ -36,7 +36,7 @@ body {
   padding: 0.6vw;
   background-color: var(--button);
   border-radius: 2vw;
-  height: 21vw;
+  height: 23vw;
   width: 22vw;
   filter: drop-shadow(0.5vw 0.5vw 0.6vw #000000);
   text-align: center;

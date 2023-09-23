@@ -1,47 +1,83 @@
+/* || Navigation Bar */
+@media screen and (min-width: 1001px) {
+  .float-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .container_text {
+    top: -2vw;
+    font-size: 2.5vw;
+  }
+
+  .container_name {
+    top: -4vw;
+    font-size: 1.5vw;
+  }
+  .float-container {
+    height: 22vw;
+    width: 21.5vw;
+  }
+
+  .container_img {  
+    width: 20.5vw;
+    height: 12vw;
+  }
+}
+
+/* || Navigation Bar */
 @media screen and (max-width: 1000px) and (min-width: 401px) {
-    .float-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  
-    .float-container {
-      height: 23vw;
-      width: 22vw;
-    }
-  
-    .container_img {
-      width: 21vw;
-      height: 12vw;
-    }
-  }
-
-  @media screen and (max-width: 400px) {
-    .float-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .container_text {
-      top: -2.5vw;
-      font-size: 5vw;
-    }
-
-    .container_name {
-      top: -6.5vw;
-      font-size: 3vw;
-    }
-    
-    .float-container {
-      margin: 0.1vw;
-      padding: 1vw;
-      height: 41vw;
-      width: 40vw;
-      border-radius: 3vw;
-    }
-  
-    .container_img {
-      border-width: 0.7vw;
-      width: 38vw;
-      height: 21vw;
-      border-radius: 2vw;
-    }
+  .float-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
   
+  .container_text {
+    top: -3vw;
+    font-size: 4vw;
+  }
+
+  .container_name {
+    top: -6.5vw;
+    font-size: 2vw;
+  }
+  .float-container {
+    height: 29vw;
+    width: 28vw;
+  }
+
+  .container_img {  
+    width: 27vw;
+    height: 15vw;
+  }
+}
+
+/* || Navigation Bar */
+@media screen and (max-width: 400px) {
+  .float-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container_text {
+    top: -2.5vw;
+    font-size: 5vw;
+  }
+
+  .container_name {
+    top: -6.5vw;
+    font-size: 3vw;
+  }
+  
+  .float-container {
+    margin: 0.1vw;
+    padding: 1vw;
+    height: 41vw;
+    width: 40vw;
+    border-radius: 3vw;
+  }
+
+  .container_img {
+    border-width: 0.7vw;
+    width: 38vw;
+    height: 21vw;
+    border-radius: 2vw;
+  }
+}
