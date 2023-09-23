@@ -32,7 +32,7 @@ body {
 /* || */
 .float-container {
   display: inline-block;
-  margin: 1.1vw;
+  margin: 0.1vw;
   padding: 0.6vw;
   background-color: var(--button);
   border-radius: 2vw;
@@ -56,10 +56,10 @@ body {
 .container_text {
   word-wrap: break-word;
   color: white;
-  font-size: 70%;
+  font-size: 3vw;
   text-align: center;
   position: relative;
-  top: -1.5vw;
+  top: -2vw;
 }
 
 /* || */
@@ -68,5 +68,5 @@ body {
   font-size: 1.9vw;
   text-align: center;
   position: relative;
-  bottom: 3.65vw;
+  top: -5vw;
 }
