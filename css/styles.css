@@ -2,6 +2,7 @@
   --background: rgb(250, 232, 204);
   --button: rgb(255, 157, 58);
   --navbar_selected: rgb(252, 171, 90);
+  --navbar_background: rgb(255, 146, 47);
 }
 
 body {
@@ -12,7 +13,6 @@ body {
   }
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
   overflow: hidden;
   text-align: center;
   font-size: 17px;
@@ -22,14 +22,14 @@ body {
 
 /* Style the links inside the navigation bar */
 .topnav a {
+  border-radius: 1.5vw;
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px; 
+  padding: 2vw 3vw; 
   text-decoration: none;
   margin: auto;
-  left: 50%;
-  display: inline;
+  background-color: var(--navbar_background);
 }
 
 /* Change the color of links on hover */
@@ -44,6 +44,14 @@ body {
   color: white;
 }
 
+.topnav img {
+  width: 10vw;
+  height: 10vw;
+}
+
+.topnav logo {
+  height: 1000px;
+}
 
 .float-grid {
   display: grid;
