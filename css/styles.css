@@ -16,6 +16,18 @@ body {
 }
 
 /* || */
+.text {
+  font-size: 3vw;
+  text-align: center;
+  color: white;
+  background-color: var(--button);
+  padding: 5px;
+  margin-top: 0px;
+  margin-bottom: 3vw;
+  border-radius: 10vw;
+}
+
+/* || */
 .float-container:hover {
   filter: opacity(90%) drop-shadow(0.5vw 0.5vw 0.6vw #000000b1);
   ;
