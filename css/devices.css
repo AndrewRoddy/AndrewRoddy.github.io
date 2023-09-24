@@ -115,7 +115,7 @@
 }
 
 /* Can alledgedly detect any phone */
-@media (hover: hover) {
+@media (hover: none) {
   .float-grid {
     grid-template-columns: repeat(2, 1fr);
   }
