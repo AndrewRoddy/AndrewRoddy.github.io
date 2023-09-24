@@ -114,11 +114,8 @@
   }
 }
 
-/* Iphone 13 */
-@media only screen 
-    and (width: 390px) 
-    and (height: 844px) 
-    and (-webkit-device-pixel-ratio: 3) {
+/* Can alledgedly detect any phone */
+@media (hover: hover) {
   .float-grid {
     grid-template-columns: repeat(2, 1fr);
   }
