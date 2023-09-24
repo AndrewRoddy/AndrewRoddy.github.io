@@ -81,3 +81,70 @@
     border-radius: 2vw;
   }
 }
+
+/* || Navigation Bar */
+@media (max-width: 500px) {
+  .float-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container_text {
+    top: -2.5vw;
+    font-size: 5vw;
+  }
+
+  .container_name {
+    top: -6.5vw;
+    font-size: 3vw;
+  }
+  
+  .float-container {
+    margin: 0.1vw;
+    padding: 1vw;
+    height: 41vw;
+    width: 40vw;
+    border-radius: 3vw;
+  }
+
+  .container_img {
+    border-width: 0.7vw;
+    width: 38vw;
+    height: 21vw;
+    border-radius: 2vw;
+  }
+}
+
+/* Iphone 13 */
+@media only screen 
+    and (width: 390px) 
+    and (height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+  .float-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container_text {
+    top: -2.5vw;
+    font-size: 5vw;
+  }
+
+  .container_name {
+    top: -6.5vw;
+    font-size: 3vw;
+  }
+  
+  .float-container {
+    margin: 0.1vw;
+    padding: 1vw;
+    height: 41vw;
+    width: 40vw;
+    border-radius: 3vw;
+  }
+
+  .container_img {
+    border-width: 0.7vw;
+    width: 38vw;
+    height: 21vw;
+    border-radius: 2vw;
+  }
+}
