@@ -1,84 +1,152 @@
-
-/* || */
-:root {
-  --background: rgb(250, 232, 204);
-  --button: rgb(255, 157, 58);
-  --navbar_selected: rgb(252, 171, 90);
-  --navbar_background: rgb(255, 146, 47);
-}
-
-/* || */
 body {
-  background-color: var(--background);
-  font-family: Arial;
-  color: var(--button);
-  font-weight: bold;
+    text-align: center;              /* Center the text */
+    align-items: center;             /* Centers text vertically */
+    font-size:20px;
+    
 }
 
-/* || */
-.text {
-  font-size: 3vw;
-  text-align: center;
-  color: white;
-  background-color: var(--button);
-  padding: 5px;
-  margin-top: 0px;
-  margin-bottom: 3vw;
-  border-radius: 10vw;
+.logo {
+    position: fixed; /* Fix it in place */
+    top: 10px; /* Distance from the top */
+    left: 10px; /* Distance from the left */
+    width: 1px; /* Set the width of your logo */
+    height: auto; /* Maintain the aspect ratio */
+    z-index: 1000; /* Make sure it's on top of other content */
 }
 
-/* || */
-.float-container:hover {
-  filter: opacity(90%) drop-shadow(0.5vw 0.5vw 0.6vw #000000b1);
-  ;
+.lower {
+    border: 0px solid black;      
+    padding: 0px 0px;     /* Padding for a nice button size */
+    background-color: transparent;         /* White background */
+    height: 1.4em;                   /* Set the icon height */
+    margin-right: 8px;               /* Space between icon and text */
+
 }
 
-/* || */
-.float-grid {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(24vw, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(24vw, 1fr));
+.bottom-button {
+    background-color: white;         /* White background */
+    color: black;                    /* Black text color */
+    border: 3px solid black;         /* Thick black border */
+    border-radius: 12px;             /* Rounded corners */
+    padding: 8px 16px;            /* Padding for a nice button size */
+    font-size: 17pt;                 /* Text size */
+    font-weight: bold;               /* Bold text */
+    cursor: pointer;                 /* Pointer cursor on hover */
+    text-align: center;              /* Center text */
+    outline: none;                   /* Remove default outline */
+    transition: background 0.3s;     /* Smooth hover effect */
+    display: flex;                   /* Enable flexbox */
+    align-items: center;             /* Center content vertically */
+    justify-content: center;         /* Center content horizontally */
+    min-width: 150px;                /* Set minimum button width */
+    min-height: 30px;                /* Set minimum button height */
+    margin-bottom: 20px;
 }
 
-/* || */
-.float-container {
-  display: inline-block;
-  margin: 0.1vw;
-  padding: 0.6vw;
-  background-color: var(--button);
-  border-radius: 2vw;
-  height: 23vw;
-  width: 22vw;
-  filter: drop-shadow(0.5vw 0.5vw 0.6vw #000000);
-  text-align: center;
+.bottom-button:hover {
+    background-color: #FF922F;       /* Light gray on hover */
 }
 
-/* || */
-.container_img {
-  border-radius: 1.5vw;
-  border-color: var(--background);
-  border-style: solid;
-  border-width: 0.4vw;
-  width: 21vw;
-  height: 11.9vw;
+.bottom-button-container {
+    flex-wrap: wrap;
+    display: flex;                   /* Enable flexbox */
+    justify-content: center;         /* Center the buttons in the container */
+    gap: 10px;                      /* Space between the buttons */
+    margin-top: 20px;               /* Add some space above the button row */
 }
 
-/* || */
-.container_text {
-  word-wrap: break-word;
-  color: white;
-  font-size: 3vw;
-  text-align: center;
-  position: relative;
-  top: -2vw;
+.apps {
+    width:  367.75px;
+    height: 134.25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer;
+    margin: 2px;
+    border: 3px solid black; /* Thick black border */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition for both transform and box-shadow */
 }
 
-/* || */
-.container_name {
-  color: white;
-  font-size: 1.9vw;
-  text-align: center;
-  position: relative;
-  top: -5vw;
+.apps:hover {
+    transform: scale(1.05); /* Scale the button to 105% */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Drop shadow */
 }
+
+.goat{
+    border: 3px solid black;         /* Thick black border */
+    border-radius: 16px;             /* Rounded corners */
+    
+}
+.goat:hover{
+    transform: scale(1.05);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Drop shadow */
+    
+}
+
+
+a {
+    text-decoration: none; /* Remove the underline links */
+}
+
+/*
+All the shrimp stuff and questions
+*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.4); /* Black with transparency */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Set a width */
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Yes and No Buttons */
+.modal-button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.yes_shrimp {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.no_shrimp {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
