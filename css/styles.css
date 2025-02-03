@@ -1,59 +1,45 @@
 body {
-    text-align: center;              /* Center the text */
-    align-items: center;             /* Centers text vertically */
-    font-size:20px;
-    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
 }
 
-.logo {
-    position: fixed; /* Fix it in place */
-    top: 10px; /* Distance from the top */
-    left: 10px; /* Distance from the left */
-    width: 1px; /* Set the width of your logo */
-    height: auto; /* Maintain the aspect ratio */
-    z-index: 1000; /* Make sure it's on top of other content */
+.glow-cursor {
+    position: fixed; /* Allows the cursor to go anywhere*/
+    width: 150px; /* Starting size of the spotlight */
+    height: 150px;
+    border-radius: 50%;
+
+    pointer-events: none; /* Allows it to interact with divs and more */
+    transform: translate(-50%, -50%); /*  Puts the glow on the cursor*/
+    transition:     box-shadow 0.2s ease, background-color 0.2s ease;
+
+    /* Color changes */
+    background-color: rgba(255, 255, 255, 0.27); /* Glowing color */
+    /* This is only at the start */
+    box-shadow: 0 0 300px rgba(255, 255, 255, 1); /* Outer glow */
+
+    z-index: 9999; /* Makes sure glow is on top */
 }
 
-.lower {
-    border: 0px solid black;      
-    padding: 0px 0px;     /* Padding for a nice button size */
-    background-color: transparent;         /* White background */
-    height: 1.4em;                   /* Set the icon height */
-    margin-right: 8px;               /* Space between icon and text */
 
-}
 
-.bottom-button {
-    background-color: white;         /* White background */
-    color: black;                    /* Black text color */
-    border: 3px solid black;         /* Thick black border */
-    border-radius: 12px;             /* Rounded corners */
-    padding: 8px 16px;            /* Padding for a nice button size */
-    font-size: 17pt;                 /* Text size */
-    font-weight: bold;               /* Bold text */
-    cursor: pointer;                 /* Pointer cursor on hover */
-    text-align: center;              /* Center text */
-    outline: none;                   /* Remove default outline */
-    transition: background 0.3s;     /* Smooth hover effect */
-    display: flex;                   /* Enable flexbox */
-    align-items: center;             /* Center content vertically */
-    justify-content: center;         /* Center content horizontally */
-    min-width: 150px;                /* Set minimum button width */
-    min-height: 30px;                /* Set minimum button height */
-    margin-bottom: 20px;
-}
 
-.bottom-button:hover {
-    background-color: #FF922F;       /* Light gray on hover */
-}
 
-.bottom-button-container {
-    flex-wrap: wrap;
-    display: flex;                   /* Enable flexbox */
-    justify-content: center;         /* Center the buttons in the container */
-    gap: 10px;                      /* Space between the buttons */
-    margin-top: 20px;               /* Add some space above the button row */
-}
+
+
+
+
+
+
 
 .apps {
     width:  367.75px;
