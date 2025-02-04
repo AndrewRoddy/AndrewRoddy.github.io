@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100vh;
-    background-color: #111;
+    background-color: #CC7425;
     color: white;
     display: flex;
     justify-content: center;
@@ -20,13 +20,13 @@ body {
 
     pointer-events: none; /* Allows it to interact with divs and more */
     transform: translate(-50%, -50%); /*  Puts the glow on the cursor*/
-    transition:     box-shadow 0.2s ease, background-color 0.2s ease;
+    transition:     box-shadow 0.2s ease, background-color 0.2s, ease opacity 2s;
 
     /* Color changes */
-    background-color: rgba(255, 255, 255, 0.27); /* Glowing color */
+    background-color: rgba(255, 255, 255, 100); /* Glowing color */
     /* This is only at the start */
     box-shadow: 0 0 300px rgba(255, 255, 255, 1); /* Outer glow */
-
+    filter: blur(100px);
     z-index: 9999; /* Makes sure glow is on top */
 }
 
