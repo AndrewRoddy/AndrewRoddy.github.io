@@ -1,6 +1,8 @@
 const cursor = document.createElement('div');
 cursor.classList.add('glow-cursor');
-cursor.style.opacity = '0.0';
+cursor.style.opacity = '0.5';
+cursor.style.left = '0px';
+cursor.style.top = '0px';
 document.body.appendChild(cursor);
 
 // Makes the glow follow the mouse
