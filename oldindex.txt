@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Andrew Roddy</title>
+    
+
+    <!-- Sets the icon that shows on the tab -->
+    <link rel="icon" href="img\ico\PFP.ico" type="img\ico\PFP.ico"> 
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <script src="js/index.js"></script>
+    <div class="content">
+    
+      <br>
+      <h1>Andrew Roddy</h1>
+      <p>My name is Andrew Roddy. I am a CS student at Kent State University with a concentration in data engineering.</p>
+
+      <!-- - - - - - - - - - - Projects - - - - - - - - - - - - -->
+      <div>
+        <!-- Despaired Cat Game -->
+        <a href="\pages\games\despaired.html" target="_blank">
+          <img src="img/apps/Despaired_Cat_Game.png" height=120px class="apps">
+        </a>
+
+          <!-- Delta Skins -->
+        <a href="https://www.patreon.com/posts/all-delta-skin-116092383?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link" target="_blank">
+          <img src="img/apps/Delta_Skins.png" height=120px class="apps">
+        </a>
+
+        <!-- Carrots or Cats -->
+        <a href="\pages\games\carrots_or_cats.html" target="_blank">
+          <img src="img\apps\Carrots_Or_Cats.png" height=120px class="apps">
+        </a>
+
+        <!-- Template -->
+        <!--<img src="img/apps/Empty.png" height=120px class="apps">-->
+      </div>
+    </div>
+  </div>
+
+  </body>
+
+  
+</html>
+

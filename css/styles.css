@@ -1,3 +1,8 @@
+
+:root{
+    --column-size: 465px
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -7,11 +12,10 @@ body {
     color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
     overflow: hidden;
 }
 
+/* Creates the glowing cursor effect */
 .glow-cursor {
     position: fixed; /* Allows the cursor to go anywhere*/
     width: 150px; /* Starting size of the spotlight */
@@ -30,109 +34,44 @@ body {
     z-index: 9999; /* Makes sure glow is on top */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.apps {
-    width:  367.75px;
-    height: 134.25px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    border: none;
-    border-radius: 15px; /* Rounded corners */
-    cursor: pointer;
-    margin: 2px;
-    border: 3px solid black; /* Thick black border */
-    transition: transform 0.2s, box-shadow 0.2s; /* Transition for both transform and box-shadow */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers columns when wrapped */
+    gap: 10px;
+    max-width: 100%;
+    margin-left: 160px;
+    margin-right: 160px;
 }
 
-.apps:hover {
-    transform: scale(1.05); /* Scale the button to 105% */
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Drop shadow */
-}
-
-.goat{
-    border: 3px solid black;         /* Thick black border */
-    border-radius: 16px;             /* Rounded corners */
+.column {
+    flex: 1;
+    min-width: var(--column-size); /* The smallest width colums can be */
+    padding: 20px; /* Space between edge of screen and text */
     
-}
-.goat:hover{
-    transform: scale(1.05);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Drop shadow */
-    
+    margin-top: 50px;
+    height: 100vh; /* The entire height of the webpage */
+
 }
 
+.left-column {
+    overflow: hidden; /* Prevents scrolling */
+}
+
+.right-column {
+    overflow-y: auto; /* Allows vertical scrolling */
+}
+
+@media (max-width: 700px) {
+    body {
+        display: block; /* Now scrollable */
+    }
+}
 
 a {
     text-decoration: none; /* Remove the underline links */
 }
 
-/*
-All the shrimp stuff and questions
-*/
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(0, 0, 0, 0.4); /* Black with transparency */
+h1 {
+    font-size: 50px;
 }
-
-/* Modal Content */
-.modal-content {
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 40%; /* Set a width */
-    border-radius: 10px;
-    text-align: center;
-}
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Yes and No Buttons */
-.modal-button {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.yes_shrimp {
-    background-color: #4CAF50; /* Green */
-    color: white;
-}
-
-.no_shrimp {
-    background-color: #f44336; /* Red */
-    color: white;
-}
-
