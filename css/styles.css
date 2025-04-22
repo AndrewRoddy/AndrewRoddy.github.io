@@ -1,11 +1,10 @@
-
-:root{
-    --column-size: 465px
+:root {
+    --column-size: 465px;
 }
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 0 20px; /* Adds 20px space on left and right */
     font-family: Arial, sans-serif;
     height: 100vh;
     background-color: #CC7425;
@@ -17,59 +16,46 @@ body {
 
 /* Creates the glowing cursor effect */
 .glow-cursor {
-    position: fixed; /* Allows the cursor to go anywhere*/
-    width: 150px; /* Starting size of the spotlight */
+    position: fixed;
+    width: 150px;
     height: 150px;
     border-radius: 50%;
-
-    pointer-events: none; /* Allows it to interact with divs and more */
-    transform: translate(-50%, -50%); /*  Puts the glow on the cursor*/
-    transition:     box-shadow 0.2s ease, background-color 0.2s, ease opacity 2s;
-
-    /* Color changes */
-    background-color: rgba(255, 255, 255, 100); /* Glowing color */
-    /* This is only at the start */
-    box-shadow: 0 0 300px rgba(255, 255, 255, 1); /* Outer glow */
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: box-shadow 0.2s ease, background-color 0.2s ease, opacity 2s ease;
+    background-color: rgba(255, 255, 255, 100);
+    box-shadow: 0 0 300px rgba(255, 255, 255, 1);
     filter: blur(100px);
-    z-index: 9999; /* Makes sure glow is on top */
+    z-index: 9999;
 }
 
 .main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centers columns when wrapped */
+    justify-content: center;
     gap: 10px;
-    max-width: 100%;
-    margin-left: 160px;
-    margin-right: 160px;
+    max-width: 1200px; /* Limits maximum width */
+    margin: 0 auto; /* Centers .main */
 }
 
 .column {
     flex: 1;
-    min-width: var(--column-size); /* The smallest width colums can be */
-    padding: 20px; /* Space between edge of screen and text */
-    
+    min-width: var(--column-size); /* 465px */
+    padding: 20px;
     margin-top: 50px;
-    height: 100vh; /* The entire height of the webpage */
-
+    height: 100vh;
 }
 
 .left-column {
-    overflow: hidden; /* Prevents scrolling */
+    overflow: hidden;
 }
 
 .right-column {
-    overflow-y: auto; /* Allows vertical scrolling */
-}
-
-@media (max-width: 700px) {
-    body {
-        display: block; /* Now scrollable */
-    }
+    overflow-y: auto;
 }
 
 a {
-    text-decoration: none; /* Remove the underline links */
+    text-decoration: none;
 }
 
 h1 {
