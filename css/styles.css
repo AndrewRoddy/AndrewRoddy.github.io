@@ -2,19 +2,22 @@
     --column-size: 465px;
 }
 
+* {
+    box-sizing: border-box; /* Ensures padding/margins are included in width */
+}
+
 body {
     margin: 0;
-    padding: 0 20px; /* Adds 20px space on left and right */
+    padding: 0 20px;
     font-family: Arial, sans-serif;
-    height: 100vh;
     background-color: #CC7425;
     color: white;
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    overflow-x: hidden; /* Prevents horizontal scrollbar */
+    overflow-y: auto; /* Allows vertical scrolling */
 }
 
-/* Creates the glowing cursor effect */
 .glow-cursor {
     position: fixed;
     width: 150px;
@@ -34,16 +37,15 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    max-width: 1200px; /* Limits maximum width */
-    margin: 0 auto; /* Centers .main */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .column {
     flex: 1;
-    min-width: var(--column-size); /* 465px */
+    min-width: var(--column-size);
     padding: 20px;
     margin-top: 50px;
-    height: 100vh;
 }
 
 .left-column {
@@ -54,10 +56,29 @@ body {
     overflow-y: auto;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 a {
     text-decoration: none;
 }
 
 h1 {
     font-size: 50px;
+}
+
+@media (max-width: 980px) {
+    .main {
+        display: block; /* Stacks columns as block elements */
+    }
+    .column {
+        width: 100%; /* Takes full available width */
+        max-width: 100%; /* Prevents exceeding viewport */
+        min-width: 0; /* Overrides min-width for narrow screens */
+    }
+    .right-column {
+        margin-top: 20px; /* Adds space between columns for clarity */
+    }
 }
