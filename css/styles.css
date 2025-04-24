@@ -7,8 +7,8 @@
 }
 
 body {
-    margin: 0;
-    padding: 0 20px;
+    /*margin: 0;*/
+    /*padding: 0 00px;*/
     font-family: Arial, sans-serif;
     background-color: #CC7425;
     color: white;
@@ -45,7 +45,7 @@ body {
     flex: 1;
     min-width: var(--column-size);
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 00px;
 }
 
 .left-column {
@@ -56,17 +56,12 @@ body {
     overflow-y: auto;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 a {
     text-decoration: none;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 @media (max-width: 980px) {
@@ -77,6 +72,10 @@ h1 {
         width: 100%; /* Takes full available width */
         max-width: 100%; /* Prevents exceeding viewport */
         min-width: 0; /* Overrides min-width for narrow screens */
+    }
+    .left-column {
+        margin-top: 00px; /* Different margin for top-and-bottom mode */
+        padding-top: 0;
     }
     .right-column {
         margin-top: 20px; /* Adds space between columns for clarity */
