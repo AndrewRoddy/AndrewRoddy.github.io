@@ -2,7 +2,7 @@ const cursor = document.createElement('div');
 cursor.classList.add('glow-cursor');
 
 // Opacity and position on start 
-cursor.style.opacity = '0.2';
+cursor.style.opacity = '0.11';
 cursor.style.left = '20px';
 cursor.style.top = '20px';
 document.body.appendChild(cursor);
@@ -13,11 +13,11 @@ document.addEventListener('mousemove', (e) => {
     cursor.style.top = `${e.clientY}px`;
 
     // Fix : Makes cursor glow once webpage loaded
-    cursor.style.opacity = '0.2';
+    cursor.style.opacity = '0.11';
 });
 
 document.addEventListener('mouseenter', () => {
-    cursor.style.opacity = '0.1';
+    cursor.style.opacity = '0.05';
     cursor.style.width = '300px';
     cursor.style.height = '300px';
     cursor.style.boxShadow = ' 0 0 300px rgb(255, 255, 255, 1)';

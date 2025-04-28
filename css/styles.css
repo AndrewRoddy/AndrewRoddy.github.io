@@ -56,6 +56,9 @@ body {
     overflow-y: auto;
 }
 
+.link       { opacity: 80%;  transition:300ms;}
+.link:hover { opacity: 100%; transition:300ms;}
+
 a {
     text-decoration: none;
 }
