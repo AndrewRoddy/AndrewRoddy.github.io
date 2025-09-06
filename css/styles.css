@@ -191,7 +191,6 @@ p {
 
 .company-link {
     color: var(--text-primary);
-    text-decoration: none;
     transition: var(--transition);
 }
 

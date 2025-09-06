@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
+  <!-- information for computers -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Info for on the line -->
+    <!-- Info for "on the line" -->
     <meta name="description" content="Andrew Roddy - Computer Science Student at Kent State University specializing in data engineering. Portfolio showcasing projects and experience.">
     <meta name="keywords" content="Andrew Roddy, Computer Science, Kent State University, Data Engineering, Portfolio, Web Development">
     <meta name="author" content="Andrew Roddy">
+    <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Name, Icon,  -->
+    <!-- Title, Icon,  -->
     <title>Andrew Roddy</title>
     <link rel="icon" href="img/ico/full_PFP.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
   </head>
 
+  <!-- information for people -->
   <body>
     <main class="main">
+
+      <!-- left column -->
       <aside class="column left-column">
+
+        <!-- Name and info -->
         <header class="profile-header">
           <div class="name-section">
             <h1>Andrew Roddy</h1>
@@ -28,26 +34,37 @@
           </div>
         </header>
 
+        <!-- social clickies  -->
         <section class="social-links" aria-label="Social Media Links">
           <nav class="social-nav">
+
+            <!-- github -->
             <a class="link" href="https://github.com/AndrewRoddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
               <img src="img/link/github.png" alt="GitHub" width="30" height="30">
             </a>
+
+            <!-- linkedin -->
             <a class="link" href="https://www.linkedin.com/in/andrewroddy/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
               <img src="img/link/linkedin.png" alt="LinkedIn" width="30" height="30">
             </a>
+
+            <!-- resume -->
             <a class="link" href="doc/Andrew_Roddy_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="View Resume">
               <img src="img/link/document.png" alt="Resume" width="30" height="30">
             </a>
+
           </nav>
         </section>
       </aside>
 
+      <!-- right column -->
       <article class="column right-column">
-        <section class="education-section">
 
+        <!-- Education -->
+        <section class="education-section">
           <h2>Education</h2>
 
+          <!-- Kent State -->
           <div class="education-item">
             <strong>Kent State University (Kent Campus)</strong>
             <span class="date">Fall 2024 - Present</span><br>
@@ -55,6 +72,7 @@
             Data Engineering Concentration
           </div>
 
+          <!-- McDowell  -->
           <div class="education-item">
             <strong>McDowell High School</strong>
             <span class="date">Fall 2020 - Spring 2024</span><br>
@@ -63,21 +81,22 @@
 
         </section>
 
+        <!-- Experience (Jobs) -->
         <section class="experience-section">
           <h2>Experience</h2>
           
+          <!-- Launchnet -->
           <div class="experience-item">
-            <a href="https://www.kent.edu/launchnet" class="company-link" rel="noopener noreferrer">
-
+            <a href="https://www.kent.edu/launchnet" target="_blank" class="company-link" rel="noopener noreferrer">
               <strong>LaunchNET</strong>
-
             </a>
             <span class="role"> - i3 Business Accelerator Venture Founder</span><br>
             <span class="date">June 2025 - July 2025 (6 week program)</span>
           </div>
 
+          <!-- Sloppy Duck (Jrs on the bay because it sounds better) -->
           <div class="experience-item">
-            <a href="https://www.sloppyducksaloon.com/" class="company-link" rel="noopener noreferrer">
+            <a href="https://www.sloppyducksaloon.com/" target="_blank" class="company-link" rel="noopener noreferrer">
               <strong>Jr's On The Bay</strong>
             </a>
             <span class="role"> - Host</span><br>
@@ -86,7 +105,7 @@
           
           <!-- IHOP -->
           <div class="experience-item">
-            <a href="https://www.ihop.com/en" class="company-link" rel="noopener noreferrer">
+            <a href="https://www.ihop.com/en" target="_blank" class="company-link" rel="noopener noreferrer">
               <strong>IHOP</strong>
             </a>
             <span class="role"> - Host</span><br>
@@ -94,29 +113,34 @@
           </div>
         </section>
 
+        <!-- Projects -->
         <section class="projects-section">
           <h2>Projects</h2>
           <div class="projects-grid">
+
+            <!-- Cube Clicker -->
             <article class="project-card">
               <a href="pages/Cube-Clicker/index.html" rel="noopener noreferrer">
                 <img src="img/apps/Cube-Clicker.png" alt="Cube Clicker Game Screenshot" class="project-image" loading="lazy">
                 <h3>Cube Clicker</h3>
                 <p>An interactive idle clicker game built with modern web technologies. Features incremental mechanics and engaging gameplay.</p>
-                <span class="tech-stack">JavaScript • HTML5 • CSS3</span>
+                <span class="tech-stack">Three.js • JavaScript</span>
               </a>
             </article>
 
+            <!-- Despaired Cat Game -->
             <article class="project-card">
-              <a href="pages/games/despaired.html" target="_blank" rel="noopener noreferrer">
+              <a href="pages/despaired.html" target="_blank" rel="noopener noreferrer">
                 <img src="img/apps/Despaired_Cat_Game.png" alt="Despaired Cat Game Screenshot" class="project-image" loading="lazy">
                 <h3>Despaired Cat Game</h3>
-                <p>A humorous indie game featuring unique gameplay mechanics. Continuously updated with new features and improvements.</p>
-                <span class="tech-stack">Game Development • Itch.io</span>
+                <p>A humorous indie game created for a HacKSU (KSU CS Club) lesson taught by me.</p>
+                <span class="tech-stack">Godot • Presenting</span>
               </a>
             </article>
 
+            <!-- Clomp -->
             <article class="project-card">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="pages/clomp.html" target="_blank" rel="noopener noreferrer">
                 <img src="img/apps/Clomp.png" alt="Clomp Game Screenshot" class="project-image" loading="lazy">
                 <h3>Clomp</h3>
                 <p>A fast-paced 2-player couch co-op game developed in 24 hours during a livestream. Features multiplayer and CPU gameplay.</p>
@@ -124,36 +148,43 @@
               </a>
             </article>
 
+            <!-- Meetures -->
             <article class="project-card">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="pages/meetures.html" target="_blank" rel="noopener noreferrer">
                 <img src="img/apps/Meetures.png" alt="Meetures Project Screenshot" class="project-image" loading="lazy">
                 <h3>Meetures</h3>
-                <p>An innovative gaming project showcasing creative design and interactive elements.</p>
-                <span class="tech-stack">Web Development • Interactive Design</span>
+                <p>A 3D CAD project created in Fusion 360 showcasing creative design and interactive elements.</p>
+                <span class="tech-stack">CAD • Fusion 360</span>
               </a>
             </article>
 
+            <!-- Delta Skins -->
             <article class="project-card">
               <a href="https://www.patreon.com/posts/all-delta-skin-116092383" target="_blank" rel="noopener noreferrer">
                 <img src="img/apps/Delta_Skins.png" alt="Delta Skins Design Preview" class="project-image" loading="lazy">
                 <h3>Delta Skins</h3>
-                <p>Custom skin designs and modifications for Delta emulator. Available through Patreon for the gaming community.</p>
-                <span class="tech-stack">Design • Digital Art • Community</span>
+                <p>Custom skin designs and modifications for Delta emulator. A business venture available through Patreon. Part of the 6 week LaunchNET Business Accelerator Fellowship Program.</p>
+                <span class="tech-stack">Business • Marketing • Digital Art</span>
               </a>
             </article>
 
+            <!-- Carrots or Cats -->
             <article class="project-card">
-              <a href="pages/games/carrots_or_cats.html" target="_blank" rel="noopener noreferrer">
+              <a href="pages/carrots_or_cats.html" target="_blank" rel="noopener noreferrer">
                 <img src="img/apps/Carrots_Or_Cats.png" alt="Carrots or Cats Game Screenshot" class="project-image" loading="lazy">
                 <h3>Carrots or Cats</h3>
                 <p>My first game created at age 9 for a science fair. Help Blue Bunny collect carrots while avoiding cats across 7 levels.</p>
-                <span class="tech-stack">Scratch • Game Logic</span>
+                <span class="tech-stack">Scratch • First Project</span>
               </a>
             </article>
+
           </div>
         </section>
       </article>
     </main>
+
+    <!-- the script -->
+     <!-- placed at the end so the glow cursor will work (don't move it future me) -->
     <script src="js/index.js"></script>
   </body>
 </html>

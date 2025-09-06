@@ -1,0 +1,201 @@
+.jump_king_skins {
+    font-size: 16px;
+    font-weight: regular;
+    color: black;
+    border: none;
+    margin: 2px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s; /* Transition for both transform and box-shadow */
+}
+
+.jump_king_skins:hover {
+    transform: scale(1.05); /* Scale the button to 105% */
+}
+
+.link_word {
+    font-size: 16px;
+    font-weight: regular;
+    color: black;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-style: italic;
+    transition: transform 0.1s ease, margin-right 0.1s ease, margin-left 0.1s ease; /* Smooth transition for both transform and margin */
+}
+
+.link_word:hover {
+    transform: scale(1.8); /* Scale the link to 150% - much bigger! */
+    margin-right: 16px; /* Push adjacent text to the right */
+    margin-left: 16px; /* Push adjacent text to the right */
+}
+
+.link_word_big {
+    font-size: 16px;
+    font-weight: regular;
+    color: black;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-style: italic;
+    transition: transform 0.1s ease, margin-right 0.1s ease, margin-left 0.1s ease; /* Smooth transition for both transform and margin */
+}
+
+.link_word_big:hover {
+    transform: scale(1.8); /* Scale the link to 150% - much bigger! */
+    margin-right: 36px; /* Push adjacent text to the right */
+    margin-left: 36px; /* Push adjacent text to the right */
+}
+
+.back-button {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+.back-button img {
+    height: 40px;
+    transition: transform 0.2s ease;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: white;
+}
+
+.back-button img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .back-button img {
+        height: 35px;
+        padding: 6px;
+    }
+}
+
+.meetures {
+    height:300px;
+    width:300px;
+    font-size: 16px;
+    font-weight: regular;
+    color: black;
+    border: none;
+    margin: 2px auto;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.2s; /* Transition for both transform and box-shadow */
+}
+
+.meetures:hover {
+    transform: scale(1.05); /* Scale the button to 105% */
+}
+
+/* Meetures Carousel Styles */
+.carousel-container {
+    margin: 20px auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.carousel-container h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 700px; /* Increased from 600px to accommodate buttons */
+    width: 100%;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+    height: 100%;
+    align-items: center;
+    transform: translateX(0px);
+}
+
+.carousel-slide {
+    min-width: 500px;
+    max-width: 500px;
+    height: 500px;
+    margin: 0;
+    object-fit: contain;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.carousel-btn {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 15px;
+    margin: 0 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn:hover {
+    background-color: #ff922f;
+}
+
+.carousel-btn:active {
+    background-color: #e5822a;
+}
+
+.carousel-counter {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        max-width: 100%; /* Allow full width on mobile */
+        padding: 0 10px; /* Add some padding to prevent edge cutoff */
+    }
+    
+    .carousel-track-container {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .carousel-slide {
+        min-width: 300px;
+        max-width: 300px;
+        height: 300px;
+    }
+    
+    .carousel-btn {
+        padding: 12px;
+        font-size: 16px;
+        margin: 0 5px;
+        width: 40px;
+        height: 40px;
+    }
+}
