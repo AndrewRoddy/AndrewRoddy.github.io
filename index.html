@@ -1,145 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Info for on the line -->
+    <meta name="description" content="Andrew Roddy - Computer Science Student at Kent State University specializing in data engineering. Portfolio showcasing projects and experience.">
+    <meta name="keywords" content="Andrew Roddy, Computer Science, Kent State University, Data Engineering, Portfolio, Web Development">
+    <meta name="author" content="Andrew Roddy">
+
+    <!-- Name and stuff -->
     <title>Andrew Roddy</title>
     <link rel="icon" href="img/ico/full_PFP.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
   </head>
+
   <body>
-    <div class="main">
-      <div class="column left-column">
-        <!-- Top name and image -->
-        <div style="display: flex; gap: 10px; flex-wrap: nowrap; align-items: center;">
-          <!-- ID Photo -->
-           <!-- CSS: Makes the image sit to the side of the name -->
-          <!-- <img src="img\ID_PHOTO.png" alt="Profile Photo" style="width: 50px; height: 50px; border-radius: 10px; object-fit: cover; box-sizing: border-box;"> -->
-          <!-- Name -->
-          <h1>Andrew Roddy</h1>
-        </div>
+    <main class="main">
+      <aside class="column left-column">
+        <header class="profile-header">
+          <div class="name-section">
+            <h1>Andrew Roddy</h1>
+            <h3 class="profession">Computer Science Student</h3>
+            <p class="light tagline">Student at Kent State University concentrated in data engineering.</p>
+          </div>
+        </header>
 
-        <!-- Text under name, Profession and Tagline -->
-        <h3 style="margin-top: -25px; font-weight:lighter">Computer Science Student</h3>
-        <p class="light">Student at Kent State University concentrated in data engineering.</p>
-        
-        <!-- Social Media / Other Icon Links -->
-          <!-- Github https://www.iconfinder.com/icons/211904/social_github_icon -->
-          <a class="link" href="https://github.com/AndrewRoddy" target="_blank" style="text-decoration: none;">
-            <img src="img/link/github.png" alt="GitHub" style="width: 30px; height: 30px;">
-          </a>
+        <section class="social-links" aria-label="Social Media Links">
+          <nav class="social-nav">
+            <a class="link" href="https://github.com/AndrewRoddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+              <img src="img/link/github.png" alt="GitHub" width="30" height="30">
+            </a>
+            <a class="link" href="https://www.linkedin.com/in/andrewroddy/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+              <img src="img/link/linkedin.png" alt="LinkedIn" width="30" height="30">
+            </a>
+            <a class="link" href="doc/Andrew_Roddy_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="View Resume">
+              <img src="img/link/document.png" alt="Resume" width="30" height="30">
+            </a>
+          </nav>
+        </section>
+      </aside>
 
-          <a class="link" href="https://www.linkedin.com/in/andrewroddy/" target="_blank" style="text-decoration: none;">
-            <img src="img/link/linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px;">
-          </a>
+      <article class="column right-column">
+        <section class="education-section">
 
-          <a class="link" href="doc/Andrew_Roddy_Resume.pdf" target="_blank" style="text-decoration: none;">
-            <img src="img/link/document.png" alt="Resume" style="width: 30px; height: 30px;">
-          </a>
-        
-      </div>
-      <div class="column right-column">
-        <h2>Education</h2>
-        <p>
-          <B>Kent State University (Kent Campus)</B>   Fall 2024 - Present<br>
-          Bachelor of Science in Computer Science - 4.0 GPA<br>
-          Data Engineering Concentration<br><br>
-          <B>McDowell High School</B> Fall 2020 - Spring 2024<br>
-          Honors college - 4.3 GPA
-        </p>
-        <h2>Experience</h2>
+          <h2>Education</h2>
 
-        <a href="https://www.kent.edu/launchnet" style="color:white">
-          <B style="color:white">LaunchNET</B></a>
-         - i3 Business Accelerator Venture Founder<br>
-        June 2025 - July 2025 (6 week program)<br><br>
+          <div class="education-item">
+            <strong>Kent State University (Kent Campus)</strong>
+            <span class="date">Fall 2024 - Present</span><br>
+            Bachelor of Science in Computer Science - 4.0 GPA<br>
+            Data Engineering Concentration
+          </div>
 
-        <a href="https://www.sloppyducksaloon.com/" style="color:white">
-          <B>Jr's On The Bay</B></a>
-         - Host<br>
-        April 2024 - August 2024<br><br>
+          <div class="education-item">
+            <strong>McDowell High School</strong>
+            <span class="date">Fall 2020 - Spring 2024</span><br>
+            Honors college - 4.3 GPA
+          </div>
 
-        <B>IHOP</B>
-         - Host<br>
-        June 2022 - September 2022<br><br>
+        </section>
 
-        <h2>Projects</h2>
-        <div class="projects-grid">
+        <section class="experience-section">
+          <h2>Experience</h2>
           
-          <!-- Cube Clicker -->
-          <div class="project-card">
-            <a href="https://cube-clicker-indol.vercel.app/" target="_blank">
-              <img src="drewgo.com/img/apps/Cube-Clicker.png" alt="Cube Clicker" class="project-image">
-              <h3>Cube Clicker</h3>
-              <p>An interactive idle clicker game built with modern web technologies. Features incremental mechanics and engaging gameplay.</p>
-              <span class="tech-stack">JavaScript • HTML5 • CSS3</span>
+          <div class="experience-item">
+            <a href="https://www.kent.edu/launchnet" class="company-link" rel="noopener noreferrer">
+
+              <strong>LaunchNET</strong>
+
             </a>
+            <span class="role"> - i3 Business Accelerator Venture Founder</span><br>
+            <span class="date">June 2025 - July 2025 (6 week program)</span>
           </div>
 
-          <!-- Despaired Cat Game -->
-          <div class="project-card">
-            <a href="drewgo.com/pages/games/despaired.html" target="_blank">
-              <img src="drewgo.com/img/apps/Despaired_Cat_Game.png" alt="Despaired Cat Game" class="project-image">
-              <h3>Despaired Cat Game</h3>
-              <p>A humorous indie game featuring unique gameplay mechanics. Continuously updated with new features and improvements.</p>
-              <span class="tech-stack">Game Development • Itch.io</span>
+          <div class="experience-item">
+            <a href="https://www.sloppyducksaloon.com/" class="company-link" rel="noopener noreferrer">
+              <strong>Jr's On The Bay</strong>
             </a>
+            <span class="role"> - Host</span><br>
+            <span class="date">April 2024 - August 2024</span>
           </div>
-
-          <!-- Clomp -->
-          <div class="project-card">
-            <a href="drewgo.com/pages/games/clomp.html" target="_blank">
-              <img src="drewgo.com/img/apps/Clomp.png" alt="Clomp" class="project-image">
-              <h3>Clomp</h3>
-              <p>A fast-paced 2-player couch co-op game developed in 24 hours during a livestream. Features multiplayer and CPU gameplay.</p>
-              <span class="tech-stack">Game Development • Multiplayer</span>
+          
+          <!-- IHOP -->
+          <div class="experience-item">
+            <a href="https://www.ihop.com/en" class="company-link" rel="noopener noreferrer">
+              <strong>IHOP</strong>
             </a>
+            <span class="role"> - Host</span><br>
+            <span class="date">June 2022 - September 2022</span>
           </div>
+        </section>
 
-          <!-- Meetures -->
-          <div class="project-card">
-            <a href="drewgo.com/pages/games/meetures.html" target="_blank">
-              <img src="drewgo.com/img/apps/Meetures.png" alt="Meetures" class="project-image">
-              <h3>Meetures</h3>
-              <p>An innovative gaming project showcasing creative design and interactive elements.</p>
-              <span class="tech-stack">Web Development • Interactive Design</span>
-            </a>
+        <section class="projects-section">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <a href="/pages/Cube-Clicker/index.html" rel="noopener noreferrer">
+                <img src="img/apps/Cube-Clicker.png" alt="Cube Clicker Game Screenshot" class="project-image" loading="lazy">
+                <h3>Cube Clicker</h3>
+                <p>An interactive idle clicker game built with modern web technologies. Features incremental mechanics and engaging gameplay.</p>
+                <span class="tech-stack">JavaScript • HTML5 • CSS3</span>
+              </a>
+            </article>
+
+            <article class="project-card">
+              <a href="pages/games/despaired.html" target="_blank" rel="noopener noreferrer">
+                <img src="img/apps/Despaired_Cat_Game.png" alt="Despaired Cat Game Screenshot" class="project-image" loading="lazy">
+                <h3>Despaired Cat Game</h3>
+                <p>A humorous indie game featuring unique gameplay mechanics. Continuously updated with new features and improvements.</p>
+                <span class="tech-stack">Game Development • Itch.io</span>
+              </a>
+            </article>
+
+            <article class="project-card">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="img/apps/Clomp.png" alt="Clomp Game Screenshot" class="project-image" loading="lazy">
+                <h3>Clomp</h3>
+                <p>A fast-paced 2-player couch co-op game developed in 24 hours during a livestream. Features multiplayer and CPU gameplay.</p>
+                <span class="tech-stack">Game Development • Multiplayer</span>
+              </a>
+            </article>
+
+            <article class="project-card">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="img/apps/Meetures.png" alt="Meetures Project Screenshot" class="project-image" loading="lazy">
+                <h3>Meetures</h3>
+                <p>An innovative gaming project showcasing creative design and interactive elements.</p>
+                <span class="tech-stack">Web Development • Interactive Design</span>
+              </a>
+            </article>
+
+            <article class="project-card">
+              <a href="https://www.patreon.com/posts/all-delta-skin-116092383" target="_blank" rel="noopener noreferrer">
+                <img src="img/apps/Delta_Skins.png" alt="Delta Skins Design Preview" class="project-image" loading="lazy">
+                <h3>Delta Skins</h3>
+                <p>Custom skin designs and modifications for Delta emulator. Available through Patreon for the gaming community.</p>
+                <span class="tech-stack">Design • Digital Art • Community</span>
+              </a>
+            </article>
+
+            <article class="project-card">
+              <a href="pages/games/carrots_or_cats.html" target="_blank" rel="noopener noreferrer">
+                <img src="img/apps/Carrots_Or_Cats.png" alt="Carrots or Cats Game Screenshot" class="project-image" loading="lazy">
+                <h3>Carrots or Cats</h3>
+                <p>My first game created at age 9 for a science fair. Help Blue Bunny collect carrots while avoiding cats across 7 levels.</p>
+                <span class="tech-stack">Scratch • Game Logic</span>
+              </a>
+            </article>
           </div>
-
-          <!-- Carrots or Cats -->
-          <div class="project-card">
-            <a href="drewgo.com/pages/games/carrots_or_cats.html" target="_blank">
-              <img src="drewgo.com/img/apps/Carrots_Or_Cats.png" alt="Carrots or Cats" class="project-image">
-              <h3>Carrots or Cats</h3>
-              <p>My first game created at age 9 for a science fair. Help Blue Bunny collect carrots while avoiding cats across 7 levels.</p>
-              <span class="tech-stack">Scratch • Game Logic</span>
-            </a>
-          </div>
-
-          <!-- Delta Skins -->
-          <div class="project-card">
-            <a href="https://www.patreon.com/posts/all-delta-skin-116092383" target="_blank">
-              <img src="drewgo.com/img/apps/Delta_Skins.png" alt="Delta Skins" class="project-image">
-              <h3>Delta Skins</h3>
-              <p>Custom skin designs and modifications for Delta emulator. Available through Patreon for the gaming community.</p>
-              <span class="tech-stack">Design • Digital Art • Community</span>
-            </a>
-          </div>
-
-        </div>
-
-        <!-- <p style="margin-top: 20px;">Work Experience, Personal Projects, Languages that are attributed to those projects, Extracuriculars, Applicable Courses, Cerficiates,  Interests, References available upon request.</p> -->
-      </div>
-    </div>
+        </section>
+      </article>
+    </main>
     <script src="js/index.js"></script>
   </body>
 </html>
-
-        <!-- <p>Work Experience, Personal Projects, Languages that are attributed to those projects, Extracuriculars, Applicable Courses, Cerficiates,  Interests, References available upon request.</p> -->
-      </div>
-    </div>
-    <script src="js/index.js"></script>
-  </body>
-</html>
-  
