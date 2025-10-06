@@ -95,16 +95,24 @@ body {
 .link {
     opacity: 0.8;
     transition: var(--transition);
-    display: inline-block;
+    display: flex;
+    align-items: center;
     border-radius: 8px;
     padding: 8px;
     margin: 2px;
+    text-decoration: none;
+    color: var(--text-primary);
 }
 
 .link:hover {
     opacity: 1;
     transform: translateY(-2px) scale(1.05);
     background: rgba(255, 255, 255, 0.1);
+}
+
+.link-text {
+    margin-left: 6px;
+    font-size: 16px;
 }
 
 .light {
