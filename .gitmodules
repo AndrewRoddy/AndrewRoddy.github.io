@@ -1,6 +1,6 @@
 [submodule "pages/Cube-Clicker"]
 	path = pages/Cube-Clicker
 	url = https://github.com/AndrewRoddy/Cube-Clicker.git
-[submodule "pages/Gomodoro"]
-	path = pages/Gomodoro
+[submodule "pages/Gomodoro-src"]
+	path = pages/Gomodoro-src
 	url = https://github.com/AndrewRoddy/Gomodoro
