@@ -177,6 +177,36 @@ p {
     align-items: center;
 }
 
+/* Profile Links (duplicate rules for renamed classes to avoid adblock detection) */
+.profile-nav {
+    display: flex;
+    gap: 0px;
+    align-items: center;
+}
+
+.profile-link {
+    opacity: 0.8;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 2px;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.profile-link:hover {
+    opacity: 1;
+    transform: translateY(-2px) scale(1.05);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.profile-text {
+    margin-left: 6px;
+    font-size: 16px;
+}
+
 /* Content Section Styles */
 .education-section,
 .experience-section{
