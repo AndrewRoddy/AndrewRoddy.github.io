@@ -83,9 +83,7 @@ body {
 
 .left-column {
     overflow: hidden;
-    position: sticky;
     top: 40px;
-    height: fit-content;
 }
 
 .right-column {
@@ -324,6 +322,11 @@ p {
     color: var(--text-light);
 }
 
+.projects-section, 
+.education-section{
+    margin-top: -30px;
+}
+
 .tech-stack {
     display: inline-block;
     background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
@@ -359,3 +362,4 @@ p {
         margin: 25px 0 12px 0;
     }
 }
+
