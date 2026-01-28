@@ -152,5 +152,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Start loading all the images when the page loads
-loadAllImages();
+// Start loading images when the carousel (or meetures section) becomes visible.
+// Use IntersectionObserver to defer heavy image loading until user visits that part of the page.
+document.addEventListener('DOMContentLoaded', () => {
+    const observerTarget = carouselTrack || document.getElementById('meeturesSection') || document.querySelector('.meetures-section');
+
+    if (observerTarget && 'IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    loadAllImages();
+                    obs.disconnect();
+                }
+            });
+        }, { root: null, rootMargin: '300px', threshold: 0.05 });
+
+        observer.observe(observerTarget);
+    } else {
+        // Fallback: if the target isn't present (script on other pages) or IntersectionObserver
+        // isn't supported, load images immediately so the carousel still works.
+        loadAllImages();
+    }
+});
