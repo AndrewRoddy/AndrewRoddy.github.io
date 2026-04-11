@@ -382,12 +382,22 @@ p {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Art Gallery Styles */
+/* Graphics Portfolio Styles */
 .gallery-section {
     max-width: 1200px;
-    margin: 0 auto 60px auto;
-    padding: 40px 20px 20px 20px;
-    width: 100%;
+    margin: 0 20px 60px 20px;
+    padding: 30px;
+    width: calc(100% - 40px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    border: 1px solid var(--border-light);
+    backdrop-filter: blur(20px);
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition);
+}
+
+.gallery-section:hover {
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .gallery-heading {
@@ -440,7 +450,9 @@ p {
 
 @media (max-width: 780px) {
     .gallery-section {
-        padding: 20px 10px 10px 10px;
+        margin: 0 10px 30px 10px;
+        padding: 20px 15px;
+        width: calc(100% - 20px);
     }
 
     .gallery-grid {
