@@ -27,7 +27,8 @@ body {
     background-attachment: fixed;
     color: var(--text-primary);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     /* Prevents scrollbars */
     overflow-x: hidden;
@@ -381,4 +382,89 @@ p {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Graphics Portfolio Styles */
+.gallery-section {
+    max-width: 1200px;
+    margin: 0 20px 60px 20px;
+    padding: 30px;
+    width: calc(100% - 40px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    border: 1px solid var(--border-light);
+    backdrop-filter: blur(20px);
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition);
+}
+
+.gallery-section:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.gallery-heading {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: var(--text-primary);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.gallery-item {
+    display: block;
+    position: relative;
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--border-light);
+    backdrop-filter: blur(20px);
+    transition: var(--transition);
+    text-decoration: none;
+    flex: 0 0 auto;
+}
+
+.gallery-item img {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    transition: var(--transition);
+}
+
+.gallery-item:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.04);
+}
+
+@media (max-width: 780px) {
+    .gallery-section {
+        margin: 0 10px 30px 10px;
+        padding: 20px 15px;
+        width: calc(100% - 20px);
+    }
+
+    .gallery-grid {
+        gap: 10px;
+    }
+
+    .gallery-item {
+        height: 150px;
+    }
+
+    .gallery-heading {
+        font-size: 22px;
+    }
+}
 
